@@ -1,0 +1,12 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the start of the flex container */
+  align-items: stretch; /* Stretch items to fill the container width */
+  height: 100vh; /* Adjust height as needed */
+}
+
+.slider-image {
+  width: 100%;
+  height: auto; /* This will maintain the aspect ratio */
+}
