@@ -1,0 +1,166 @@
+.girl-boxer {
+    width: 100%;
+}
+
+.boxing-club {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    height         : 60vh;
+}
+
+.flag {
+    width  : 150px;
+    height : auto;
+    padding: 15px;
+}
+
+.milestone-container {
+    padding: 70px 120px 0px 120px;
+    display: flex;
+}
+
+.milestone-column {
+    position     : relative;
+    padding-right: 15px;
+}
+
+.milestone-column:not(:last-child):after {
+    content         : "";
+    position        : absolute;
+    top             : 0;
+    bottom          : 0;
+    right           : 0;
+    width           : 1px;
+    background-color: #ffffff;
+}
+
+.milestone {
+    padding       : 20px;
+    display       : flex;
+    flex-direction: column;
+}
+
+.milestone-title {
+    display: flex;
+}
+
+.milestone-footer {
+    display: flex;
+}
+
+.milestone-button {
+    background-color: transparent !important;
+    border-color    : transparent !important;
+    padding         : 0px !important;
+}
+
+.cards-col {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+
+.card-img2 {
+    height: 500px;
+}
+
+.card-img3 {
+    align-self: flex-end;
+    height: 160px;
+}
+
+.card-images {
+    display: flex;
+    margin-top: 70px;
+}
+
+.image-container{
+    position: relative;
+}
+
+.image-content{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.image-content-kid{
+    width: 50px !important;
+}
+
+.image-content img{
+    width: 80px;
+}
+
+.image-content p {
+    padding-right: 50px;
+}
+
+.title3{
+    margin-top: 70px;
+}
+
+.title3 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-box{
+    max-width: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: brown;
+}
+
+.title-img{
+    max-width: 80%;
+}
+
+.title-box h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.title-box p{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .milestone-container {
+        padding: 30px;
+    }
+
+    .milestone-column:not(:last-child):after {
+        display: none;
+    }
+
+    .card-img2 {
+        height: 400px;
+    }
+    
+    .card-img3 {
+        height: 160px;
+    }
+    .tile-container img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .milestone-container {
+        padding: 0px;
+    }
+}

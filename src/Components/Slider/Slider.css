@@ -1,12 +1,67 @@
 .slider-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align items at the start of the flex container */
-  align-items: stretch; /* Stretch items to fill the container width */
-  height: 100vh; /* Adjust height as needed */
+  display        : flex;
+  flex-direction : column;
+  justify-content: flex-start;
+  align-items    : stretch;
+  height         : 100vh;
+  overflow       : hidden;
 }
 
 .slider-image {
-  width: 100%;
-  height: auto; /* This will maintain the aspect ratio */
+  width : 100%;
+  height: auto;
+}
+
+.slider-content {
+  position  : absolute;
+  top       : 80%;
+  left      : 50%;
+  transform : translate(-50%, -50%);
+  text-align: center;
+}
+
+.slider-text {
+  font-weight: 700;
+  font-size  : 50px;
+}
+
+.slider-button {
+  border-radius   : 0px !important;
+  width           : 200px !important;
+  background-color: #fff !important;
+  border-color    : #fff !important;
+  color           : #000 !important;
+  margin-top      : 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .slider-image {
+    height: 200vh;
+    width : 100%;
+  }
+
+  .slider-text {
+    font-weight: 500;
+    font-size  : 20px;
+  }
+
+  .slider-button {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .slider-image {
+    height: 200vh;
+    width : 100%;
+  }
+
+  .slider-text {
+    font-weight: 500;
+    font-size  : 25px;
+  }
+
+  .slider-button {
+    width: 150px;
+  }
 }

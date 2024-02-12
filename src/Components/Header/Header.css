@@ -7,11 +7,12 @@
 
 li {
     list-style: none;
+    text-decoration: none;
 }
 
 a {
-    text-decoration: none;
-    color          : rgb(255, 255, 255);
+    color          : rgb(255, 255, 255) !important;
+    text-decoration: none !important;
 }
 
 .nav {
@@ -35,6 +36,10 @@ a {
 
 .nav__toggler {
     display: none;
+}
+
+.nav_link {
+    text-decoration: none;
 }
 
 .nav__toggler div {

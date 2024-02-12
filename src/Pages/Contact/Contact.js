@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Slider from "../../Components/Slider/Slider";
 import "./Contact.css";
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div>
+      <Slider />
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

@@ -18,7 +18,7 @@ function Navbar() {
     <div className="header">
       <nav className="nav">
         <a href="#" className="nav__brand">
-          <img src={Logo}/>
+          <img src={Logo} />
         </a>
         <ul className={active}>
           <li className="nav__item">
